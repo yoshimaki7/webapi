@@ -1,10 +1,16 @@
 source 'https://rubygems.org'
-
+gem 'whenever'
+gem 'amazon-ecs'
+gem 'nokogiri'
+gem 'rakuten_web_service'
+gem 'pry'
+gem 'pry-rails'
+gem 'whenever', :require => false
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.5'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# Use mysql as the database for Active Record
+gem 'mysql2', '~> 0.3.20'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'

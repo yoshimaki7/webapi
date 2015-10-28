@@ -1,0 +1,29 @@
+<% provide(:title, "管理画面") %>
+
+<p id="notice"><%= notice %></p>
+
+<div id="wrapper">
+  <div id="header">
+      ヘッダー部分
+  </div>
+  <!-- <div id="main"> -->
+    <div id="contents">
+     <center>
+       <% puts "0-000000000000" %>
+       <%= @rakuten %>
+       <% puts "0-000000000000" %>
+       
+              <%= form_for(@rakuten) do |f| %>
+                <%= f.newitem_RAKU 'item', 'hoge' , {}, true, false %>
+                <%= f.name_RAKU %><br />
+                <%= f.price_RAKU %><br />
+                <a href = "https://webapisample-yoshi7-1.c9.io/tail/<%= n.itemcode_RAKU %>.html">商品はこちら</a>
+              <% end %>
+     </center>
+    </div>
+  <!--</div>-->
+  <div id="footer">
+     copyright 格安パソコンサーチ
+  </div>
+</div>
+

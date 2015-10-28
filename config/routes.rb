@@ -1,5 +1,8 @@
 Webapi::Application.routes.draw do
-  resources :tasks
+  root "static_pages#index" 
+  get "cate/:cate" => "static_pages#cate"
+  get "tail/:id" => "static_pages#tail"
+  resources :kanri
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

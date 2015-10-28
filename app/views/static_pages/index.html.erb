@@ -1,0 +1,37 @@
+<% provide(:title, "格安パソコンサーチ") %>
+  <%= stylesheet_link_tag 'common' %>
+  <%= stylesheet_link_tag 'tail' %>
+<p id="notice"><%= notice %></p>
+
+　　<%= render partial: 'header' %>
+
+  <!-- <div id="main"> -->
+    <div id="contents">
+     <center>
+      <input type="text" name="example" class="textBox"><input type="submit" value="検索" class="btn">
+
+<table>
+　<tr>
+   <td><p><a href="">中古</a></p></td>
+   <td><p><a href="">新品</a></p></td>
+  </tr><br />
+</table>
+<p>
+<p><a href="https://webapisample-yoshi7-1.c9.io/cate/toshiba">東芝</a></p>
+<p><a href="https://webapisample-yoshi7-1.c9.io/cate/lenovo">レノボ</a></p>
+<p><a href="https://webapisample-yoshi7-1.c9.io/cate/panasonic">パナソニック</a></p>
+<p><a href="https://webapisample-yoshi7-1.c9.io/cate/nec">NEC</a></p>
+<p><a href="https://webapisample-yoshi7-1.c9.io/cate/fujitsu">富士通</a></p>
+<p><a href="https://webapisample-yoshi7-1.c9.io/cate/dell">DELL</a></p>
+<p><a href="https://webapisample-yoshi7-1.c9.io/cate/vaio">VAIO</a></p>
+<p><a href="https://webapisample-yoshi7-1.c9.io/cate/asus">ASUS</a></p>
+<p><a href="https://webapisample-yoshi7-1.c9.io/cate/acer">acer</a></p>
+</p><br />
+
+
+
+<%= yield %> 
+<%= render(:partial => "result", :object => @result) %>
+</center>
+
+<%= render partial: 'footer' %>

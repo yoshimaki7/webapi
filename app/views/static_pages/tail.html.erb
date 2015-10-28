@@ -1,0 +1,35 @@
+<% provide(:title, "tail_title") %>
+<div id="wrapper">
+  <div id="header">
+      ヘッダー部分
+  </div>
+  <div id="main">
+    <div id="menu">
+      　メニュー部分
+    </div>
+    <div id="contents">
+     <center>
+      <input type="text" name="example" class="textBox"><input type="submit" value="検索" class="btn">
+     </center>
+        <% @amazon.each do |item| %>
+        <%= item.name_AMA %><br />
+        <%= item.newprice_AMA %>
+        <%= item.usedprice_AMA %><br />
+        <%= item.maker_AMA %><br />
+　　　　<%= link_to '商品詳細はコチラ', "#{item.afilink_AMA}" %><br />
+　　　　<% end %>
+　　　　
+　　　　<% @rakuten.each do |item| %>
+        <%= item.name_RAKU %><br />
+        <%= item.price_RAKU %><br />
+        <%= item.maker_RAKU %><br />
+        <%= link_to '商品詳細はコチラ', "#{item.afilink_RAKU}" %><br />
+　　　　<% end %>
+　　　　
+　　　　
+    </div>
+  </div>
+  <div id="footer">
+     copyright 格安パソコンサーチ
+  </div>
+</div>

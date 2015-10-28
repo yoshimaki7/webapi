@@ -1,0 +1,42 @@
+<% provide(:title, "管理画面") %>
+
+<p id="notice"><%= notice %></p>
+
+<style type="text/css">
+.table {
+  border-collapse: collapse;
+  width: 960px;
+}
+.table th {
+  background-color: #cccccc;
+}
+.table td {
+  text-align: center;
+  width: 70px;
+}
+</style>
+
+<div id="wrapper">
+  <div id="header">
+      ヘッダー部分
+  </div>
+  <!-- <div id="main"> -->
+    <div id="contents">
+     <center>
+       <% @rakuten.each do |item| %>
+         <table class="table" border=1>
+             <tr>
+               <td><%= item.id %></td>
+               <th><%= item.name_RAKU %></th>
+               <td><%= item.newitem_RAKU %></td>
+             </tr>
+         </table>
+       <% end %>
+     </center>
+    </div>
+  <!--</div>-->
+  <div id="footer">
+     copyright 格安パソコンサーチ
+  </div>
+</div>
+

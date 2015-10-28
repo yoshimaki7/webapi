@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name_AMA: MyString
+  newprice_AMA: 1
+  usedprice_AMA: 1
+  newnumber_AMA: 1
+  usenumber_AMA: 1
+  newitem_AMA: MyString
+  olditem_AMA: MyString
+  maker_AMA: MyString
+  isbn_AMA: MyString
+  asin_AMA: MyString
+  img_AMA: MyString
+  afilink_AMA: MyString
+  name_RAKU: MyString
+  price_RAKU: 1
+  newitem_RAKU: 1
+  olditem_RAKU: 1
+  desc_RAKU: MyString
+  itemcode_RAKU: MyString
+  img_RAKU: MyString
+  afilink_RAKU: MyString
+
+two:
+  name_AMA: MyString
+  newprice_AMA: 1
+  usedprice_AMA: 1
+  newnumber_AMA: 1
+  usenumber_AMA: 1
+  newitem_AMA: MyString
+  olditem_AMA: MyString
+  maker_AMA: MyString
+  isbn_AMA: MyString
+  asin_AMA: MyString
+  img_AMA: MyString
+  afilink_AMA: MyString
+  name_RAKU: MyString
+  price_RAKU: 1
+  newitem_RAKU: 1
+  olditem_RAKU: 1
+  desc_RAKU: MyString
+  itemcode_RAKU: MyString
+  img_RAKU: MyString
+  afilink_RAKU: MyString

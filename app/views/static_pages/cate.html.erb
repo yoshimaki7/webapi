@@ -1,0 +1,58 @@
+<% provide(:title, "tail_title") %>
+<div id="wrapper">
+  <div id="header">
+      ヘッダー部分
+  </div>
+  <div id="main">
+    <div id="menu">
+      　メニュー部分
+    </div>
+    <div id="contents">
+     <center>
+      <input type="text" name="example" class="textBox"><input type="submit" value="検索" class="btn">
+     </center>
+        コンテンツ部分
+        <!-- コントローラーで渡された @rakuten インスタンス変数がここに勝手にはいってくる -->
+        <%= @category %>
+        
+        <div class="left_item" >
+          <!-- 個々のカラムデータを表示させたい場合 -->
+          <% @amazon.each do |n| %> 
+            <%= n.name_AMA %><br />
+            <%= n.newprice_AMA %><br />
+            <%= n.maker_AMA %><br />
+            <%= n.asin_AMA %><br />
+            <a href = "https://webapisample-yoshi7-1.c9.io/tail/<%= n.asin_AMA %>.html">商品はこちら</a>
+            <!-- HTML 整形<%= render(:partial => "result", :object => @result) %> -->
+            <!-- 以下略 -->
+          <% end %><br />
+          <% @rakuten.each do |n| %> 
+            <%= n.name_RAKU %><br />
+            <%= n.price_RAKU %><br />
+            <%= n.maker_RAKU %><br />
+            <%= n.itemcode_RAKU %><br />
+            <a href = "https://webapisample-yoshi7-1.c9.io/tail/<%= n.itemcode_RAKU %>.html">商品はこちら</a>
+            <!-- HTML 整形<%= render(:partial => "result", :object => @result) %> -->
+            <!-- 以下略 -->
+            <% end %>   
+
+            <% @amazon.each do |n| %> 
+            <%= n.newnumber_AMA %><br />
+            <%= n.usenumber_AMA %><br />
+            <% end %>  
+            <% @amazon.each do |n| %> 
+            <% if n.newnumber_AMA > 0 %> 
+            <%= n.name_AMA %><br />
+            <%= n.newprice_AMA %><br />
+            <%= n.maker_AMA %><br />
+            <%= n.asin_AMA %><br />
+            <a href = "https://webapisample-yoshi7-1.c9.io/tail/<%= n.asin_AMA %>.html">商品はこちら</a>
+            <% end %> 
+            <% end %> 
+                        
+        </div>
+    </div>
+  </div>
+  <div id="footer">
+  </div>
+</div>

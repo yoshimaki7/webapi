@@ -1,0 +1,30 @@
+<% form_tag "/rakuten/find" && "/amazon/find" do %>
+<%= text_field_tag :search_string %>
+<%= submit_tag "Search" %>
+<% end %>
+
+
+<%= begin
+<table class="table table-list">
+<thead>
+  <tr>
+   <th>新品中古</th>
+    <th>商品コード</th>
+    <th>商品名</th>
+    <th>販売価格</th>
+    <th>仕入原価</th>
+  </tr>
+</thead>
+<% @item.each do |item| %>
+<tbody>
+<tr>
+  <td><%= item.sales_condition %> </td>
+  <td><%= item.code %></td>
+  <td><%= item.name %></td>
+  <td><%= item.display_price %></td>
+  <td><%= item.display_purchase_cost %></td>
+</tr>
+</tbody>
+<% end %>
+</table>
+=end %>
