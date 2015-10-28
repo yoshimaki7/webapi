@@ -12,7 +12,7 @@
 }
 .table td {
   text-align: center;
-  width: 70px;
+  width: 120px;
 }
 </style>
 
@@ -28,7 +28,7 @@
              <tr>
                <td><%= item.id %></td>
                <th><%= item.name_RAKU %></th>
-               <td><%= item.newitem_RAKU %></td>
+               <td>新品ですか？<br><%= item.newitem_RAKU %></td>
              </tr>
          </table>
        <% end %>
