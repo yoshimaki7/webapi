@@ -2,6 +2,8 @@ Webapi::Application.routes.draw do
   root "static_pages#index" 
   get "cate/:cate" => "static_pages#cate"
   get "tail/:id" => "static_pages#tail"
+  get "newitem" => "static_pages#newitem"
+  get "useditem" => "static_pages#useditem"
   resources :kanri
   devise_for :admins
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'

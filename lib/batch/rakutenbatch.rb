@@ -21,7 +21,7 @@ items.first(1).each do |item|
   dR = "#{item['itemCaption']}"  #商品説明
   imgR = "#{item['mediumImageUrls']}"  # You can refer to values as well as Hash.
   icR = "#{item['itemCode']}"
-    Rakutendata.create({name_RAKU: nameR , price_RAKU: priceR ,afilink_RAKU: aR , desc_RAKU: dR , img_RAKU: imgR , itemcode_RAKU: icR})
+    Rakutendata.create({name_RAKU: nameR , price_RAKU: priceR ,afilink_RAKU: aR , desc_RAKU: dR , img_RAKU: imgR , itemcode_RAKU: icR, newitem_RAKU: false})
 end
 end
 end

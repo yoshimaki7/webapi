@@ -33,7 +33,6 @@ class StaticPagesController < ActionController::Base
     @amazon = Amazondata.where(maker_AMA: @category)
   end
 
-  
   def tail
     # ここに id が渡ってくる
     # 例えば Amazon なら B00UT4R3RU など
@@ -44,11 +43,21 @@ class StaticPagesController < ActionController::Base
     puts @rakuten.first
     puts "~~~~~~~~~~~~~~"
   end
-  
+
+  def useditem
+    #binding.pry
+    @rakuten = Rakutendata.where(newitem_RAKU: false)
+    @amazon = Amazondata.where('usenumber_AMA > ?', 0 )
+  end
+  def newitem
+    @rakuten = Rakutendata.where(newitem_RAKU: true)
+    @amazon = Amazondata.where('newnumber_AMA > ?', 0)
+  end
+
   def kanri
     @rakuten = Rakutendata.all
   end
-  
+
   def update
     @rakuten = Rakutendata.find(params[:id])
     @rakuten.update_attributes(params[:rakuten])
