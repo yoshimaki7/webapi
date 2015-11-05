@@ -1,5 +1,7 @@
 class Test
   def self.hoge
-    puts "hoge"
+    puts "hogefooooooo"
   end
 end
+
+Test.hoge

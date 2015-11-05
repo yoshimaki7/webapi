@@ -4,6 +4,7 @@ Webapi::Application.routes.draw do
   get "tail/:id" => "static_pages#tail"
   get "newitem" => "static_pages#newitem"
   get "useditem" => "static_pages#useditem"
+  get "search/keyword" => "static_pages#search"
   resources :kanri
   devise_for :admins
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'

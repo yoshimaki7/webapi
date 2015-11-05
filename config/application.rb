@@ -8,8 +8,8 @@ Bundler.require(*Rails.groups)
 
 module Webapi
   class Application < Rails::Application
-#    config.autoload_paths += %W(#{config.root}/lib)
-#    config.autoload_paths += Dir["#{config.root}/lib/**/"]
+    config.autoload_paths += %W(#{config.root}/lib)
+    config.autoload_paths += Dir["#{config.root}/lib/**/"]
     
 #    config.after_initialize do
 #      Dir[Rails.root.join("app/models/**/*.rb")].sort.each { |f| require f }

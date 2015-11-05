@@ -66,7 +66,15 @@ class StaticPagesController < ActionController::Base
   def destroy
     @rakuten = Rakutendata.find(params[:id])
   end
-
+  
+  def search
+    puts "xxxxxxxxxxxxxxxxxxxxxxxxxx"
+    @amazon = Amazondata.where("name_AMA like '%" + params["keyword"]["name"] + "%'")
+    puts "pppppppppppppppppppp"
+    puts @amazon.count
+    puts "pppppppppppppppppppp"
+  end
+  
  private
   def check_logged_in
    authenticate_or_request_with_http_basic("webapisample-yoshi7-1.c9.io") do |username, password|

@@ -1,2 +1,10 @@
 http://tagamidaiki.com/introduce-rails-admin-to-rails4/
 http://shiro-16.hatenablog.com/entry/2015/02/17/000715
+
+サイト内検索
+http://qiita.com/budougumi0617/items/d98fc15adea4dab438e7
+http://31webcreation.hatenablog.com/entry/rails4_ransack_install
+http://kameryo.hatenablog.com/entry/2015/05/22/172340
+
+
+http://maeharin.hatenablog.com/entry/20120811/p1

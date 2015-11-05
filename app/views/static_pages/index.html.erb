@@ -8,8 +8,19 @@
   <!-- <div id="main"> -->
     <div id="contents">
      <center>
-      <input type="text" name="example" class="textBox"><input type="submit" value="検索" class="btn">
+        <%= form_tag("search", method: "get") do %>
+          検索キーワード
+          <%= text_field_tag ":keyword", "", :id => "keyword" %><br />
+          <%= submit_tag "検索" %>
+        <% end -%>
 
+     <center>
+　　　　<% form_tag "/static_pages/search" do %>
+　　　　<%= text_field_tag :search_string %>
+　　　　<%= submit_tag "検索" %>
+　　　　<% end %>
+     </center>
+     
 <table>
 　<tr>
    <td><p><a href="">中古</a></p></td>
@@ -31,7 +42,7 @@
 
 
 <%= yield %> 
-<%= render(:partial => "result", :object => @result) %>
+
 </center>
 
 <%= render partial: 'footer' %>

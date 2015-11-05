@@ -2,11 +2,8 @@
 set :environment, :development
 set :output, 'log/crontab.log'
 
-# Testなので、3分毎に動作するように設定します
-every 3.minute do
-  # cronのコマンドライン上で動くので、二重引用符で囲っておきます
-  runner "Rakuten.rb"
-  runner "Amazon.rb"
+every 1.day do
+  runner "lib/batch/test.rb"
 end
 
 # Use this file to easily define all of your cron jobs.

@@ -8,6 +8,7 @@ gem 'pry-rails'
 gem 'whenever', :require => false
 gem 'rails_admin'
 gem 'devise'
+gem 'ransack'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.5'
 
