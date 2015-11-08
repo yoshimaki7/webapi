@@ -14,3 +14,6 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+config/databasel.yml
+lib/batch/amazonbatch.rb
+lib/batch/rakutenbatch.rb
