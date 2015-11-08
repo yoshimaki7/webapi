@@ -5,8 +5,8 @@ require 'rubygems'
 require 'uri'
 
 RakutenWebService.configuration do |c|
-  c.application_id = '7d24ec5ad62c204ac86da780ee7516a6'
-  c.affiliate_id = '094577c7.8f5e8882.094577c8.b3b01280'
+  c.application_id = '楽天ID'
+  c.affiliate_id = '楽天AffiliateID'
 end
 
 makers = ["東芝　パソコン", "レノボ パソコン", "パナソニック　パソコン", "NEC　パソコン", "富士通　パソコン", "DELL　パソコン", "VAIO　パソコン", "ASUS　パソコン", "acer　パソコン"]

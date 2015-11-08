@@ -5,9 +5,9 @@ class AmazonBatch
   require 'nokogiri'
 
   Amazon::Ecs.options = {
-    :associate_tag => 'eigogakusyuto-22',
-    :AWS_access_key_id => 'AKIAJZQEPR25OBG4A4YA',
-    :AWS_secret_key => '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'
+    :associate_tag => 'アソシエイトID',
+    :AWS_access_key_id => 'アクセスキー',
+    :AWS_secret_key => 'シークレットキー'
   }
 
   makers = ["東芝　パソコン", "レノボ パソコン", "パナソニック　パソコン", "NEC　パソコン", "富士通　パソコン", "DELL　パソコン", "VAIO　パソコン", "ASUS　パソコン", "acer　パソコン"]

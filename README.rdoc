@@ -1,10 +1,19 @@
-http://tagamidaiki.com/introduce-rails-admin-to-rails4/
-http://shiro-16.hatenablog.com/entry/2015/02/17/000715
+== ポートフォリオ
 
-サイト内検索
-http://qiita.com/budougumi0617/items/d98fc15adea4dab438e7
-http://31webcreation.hatenablog.com/entry/rails4_ransack_install
-http://kameryo.hatenablog.com/entry/2015/05/22/172340
+* 利用機能
+amazon affiliate API
+Rakuten affiliate API
+
+* ジャンル
+アフィリエイト表示サイト
+
+* 機能
+データベース mysql
+Cron whenever
+webrick
+
+* バージョン
+ruby 2.0.0
+rails 4.2.3
 
 
-http://maeharin.hatenablog.com/entry/20120811/p1
